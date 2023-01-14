@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=sawp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Travel Plan</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <!-- if you click on home you will be directed to tag having id="home". -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Red link represents bus travel time : <i class="fa fa-bus" aria-hidden="true"
+                    style="color: orange"></i><br>
+                <br>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true"
+                    style="color: green"></i><br>
+                <br>
+                Click on solve to get Solution !!
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+    <header>
+        <div id="about">
+            <br>
+            <br>
+            <span id="us"> &nbsp About Us : </span>
+            <br>
+            <br>
+            &nbsp We the SlimSh@dys are a group where we are a group of budding enthusiasts in the field of development
+            and innovation. The main aim of this project is to be &nbsp scaled on a big level and a with more great and
+            interesting tools and facilities provided its users.
+            <br>
+            &nbsp This project gives a insight of how a Travel looks when travelled by multiple means of transport and in the
+            least possible time.
+        </div>
+        <br>
+        <div id="contact">
+            Contact Us at :
+            <br>
+            <br>
+            Aditya : 7666693216
+            <br>
+            Himanshu : 7589325494
+            <br>
+            Sumit : 8287005716
+            <br>
+            Deep : 9356601106
+            <br>
+        </div>
+        <br>
+        <footer class="footer">Copyright &copy Travel Plan</footer>
+    </header>
+</body>
+
+</html>
