@@ -1,0 +1,151 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Ubuntu' , 'Times New Roman', Times, serif; 
+    font-style: italic;
+    line-height: 1.3em;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 15px; 
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#us{
+    color: whitesmoke;
+}
+#about{
+    font-size: 20px; 
+    color: white;
+    height: 120px;
+}
+#contact{
+    font-size: 20px; 
+    color: white;
+    margin-left: 1200px;
+    margin-top: 30px;
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 5px 5px;
+    padding-top: 3px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 2px 4px;
+    color: antiquewhite;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+#mynetwork {
+    width: 50%;
+    height: 100%;
+    border: 2px solid rgb(174, 150, 150);
+}
+
+#container2 {
+    width: 50%;
+    height: 100%;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.h1{
+    text-align: center;
+    font-size: 40px; 
+}
+
+#mynetwork2{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(73, 63, 63);
+}
+
+#container{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+#generate-graph{
+    margin:auto;
+    display:block;
+}
+
+
+#solve{
+    margin:auto;
+    display:block;
+}
+
+#container::before {
+    align-items: center;
+    content: "";
+    background: url(bg.jpeg) no-repeat center center/cover;   
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+header{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    'home'
+    'about'
+    'contact'
+    'footer'
+    ;
+}
+home{
+    grid-area: home;
+}
+about{
+    grid-area: about;
+}
+contact{
+    grid-area: contact;
+}
+footer{
+    grid-area: footer;
+}
+.footer{
+   position: relative;
+   top: 40px;
+   left: 620px;
+}
+header::before {
+    align-items: center;
+    content: "";
+    background: url(Contact.jpeg) no-repeat center center/cover;   
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 56%;
+    top: 817px;
+    left: 0;
+    opacity: 0.9;
+}
